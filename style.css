@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.shared-style-body {
+    max-width: 1280px;
+    border: 2px dashed red;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    /* For horizontal layout */
+    margin: 10px 140px 05px 140px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 2rem; Add some padding */
+    /* background-color: #f0f0f0; Light background */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 62px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    max-width: 1160px;
+    font-size: 1.25rem;
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    /* padding: 5px 10px; */
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+}
+
+.contact-btn {
+    background-color: #FEA301;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 1.25rem;
+    font-weight: 600;
+    height: 50;
+}
