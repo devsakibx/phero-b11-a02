@@ -6,10 +6,11 @@
     font-weight: normal;
     font-style: normal;
 }
+/* *{border: 1px solid green;} */
 
 .shared-style-body {
     max-width: 1280px;
-    /* border: 2px dashed red; */
+    border: 2px dashed red;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -123,14 +124,14 @@
 }
 
 .banner-image {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .enroll-btn {
     font-family: "Quicksand", serif;
-    width: 180px;
-    height: 50px;
-    padding: 10px 47px 10px 47px;
+    width: 150px;
+    height: 40px;
+    /* padding: 10px 47px 10px 47px; */
     color: #ffffff;
     background-color: black;
     border-radius: 12px;
@@ -162,22 +163,32 @@
     .logo {
         justify-content: space-between;
         align-content: space-between;
+        width: 100%;
+        padding: 10px 10px;
+        margin: 10px 10px;
+        
     }
 
     .banner {
 
         flex-direction: column-reverse;
         text-align: center;
+        width: 100%;
 
     }
 
     .banner-content {
         /* margin: -50px; */
+        margin: 0 auto;
 
     }
-
+    h1{
+        font-size: 1rem;
+    }
+}
     .banner-image {
-        max-width: 575px;
+        width: 90%;
+
     }
 
 
