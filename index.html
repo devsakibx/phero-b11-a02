@@ -5,6 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunnybrook</title>
+
+    <style>
+        .main {
+            text-align: center;
+            margin: auto
+        }
+
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll-text 15s linear infinite;
+        }
+
+        .opp-1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            padding-bottom: 10px;
+        }
+
+        @keyframes scroll-text {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -32,6 +63,17 @@
             <button class="contact-btn">Contact</button>
         </nav>
     </header>
+
+    <div class="main">
+        <marquee class="marq" bgcolor="#f2e8ffc6" direction="left" loop="">
+            <div class="opp-1"></div>
+            Sunnybrook School
+    </div>
+    <div class="opp-2"></div>
+    "Dream big, work hard, and always be kind."
+    </div>
+    </marquee>
+    </div>
 
     <section class="banner">
         <div class="banner-content">

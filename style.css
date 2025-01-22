@@ -15,7 +15,7 @@ a * {
 
 .shared-style-body {
     max-width: 1280px;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -602,20 +602,18 @@ footer {
 
     .footer-container {
         flex-direction: column;
-        align-items: start; 
-        text-align: start; 
-      }
-
-    .footer{
-    height: 1000px;
+        align-items: start;
+        text-align: start;
     }
 
-    .opp{
+    .footer {
+        height: 1000px;
+        margin: auto;
+    }
+
+    .opp {
         width: 400px;
-    }
-
-    .logo-container p{
-    width: 100px
+        margin: auto
     }
 }
 
