@@ -194,7 +194,7 @@
 }
 
 .card-2 {
-    background: linear-gradient(90deg, #f0f0f0, #FFF4DC);
+    background: linear-gradient(90deg, #f0f0f0, #fff4dc);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -240,7 +240,8 @@
 
 .arrow-buttons {
     height: auto;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-left: 55px;
     gap: 20px;
     display: flex;
     justify-content: center;
@@ -288,6 +289,152 @@
     /* Center korar jonno translate use */
 }
 
+/* Our storiews Section styles */
+
+#our-stories {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: -80px;
+    /* background-color: #f0f0f0; Light background for gradient */
+    /* background: linear-gradient( #f0f0f0, #fea10171); */
+    /* background-image: linear-gradient( #f0f0f0, #fea10171); */
+    background-image: url(./assets/bg.png);
+
+}
+
+#our-stories h2 {
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.story-container {
+    gap: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.story {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px 0px 20px 0px;
+    text-align: start;
+}
+
+.story img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.story img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.story-grid h3 {
+    font-size: 1rem;
+    padding-left: 20px;
+
+}
+
+.story-grid p {
+    padding-left: 20px;
+}
+
+.date-1 {
+    position: absolute;
+    left: 50px;
+    bottom: 245px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #3CD8E8;
+    width: 130px;
+    border-radius: 47px;
+}
+
+.date-2 {
+    position: absolute;
+    left: 30px;
+    bottom: 110px;
+    padding: 10px 20px;
+    font-size: 0.6rem;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #95B226;
+    width: 90px;
+    height: 10px;
+    border-radius: 47px;
+}
+
+.date-3 {
+    position: absolute;
+    left: 30px;
+    bottom: 110px;
+    padding: 10px 20px;
+    font-size: 0.6rem;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #5D58F0;
+    width: 90px;
+    height: 10px;
+    border-radius: 47px;
+}
+
+.date-4 {
+    position: absolute;
+    left: 30px;
+    bottom: 110px;
+    padding: 10px 20px;
+    font-size: 0.6rem;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #95B226;
+    width: 90px;
+    height: 10px;
+    border-radius: 47px;
+}
+
+.date-5 {
+    position: absolute;
+    left: 30px;
+    bottom: 110px;
+    padding: 10px 20px;
+    font-size: 0.6rem;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #95B226;
+    width: 90px;
+    height: 10px;
+    border-radius: 47px;
+}
+
+.view-all-btn {
+    font-family: "Quicksand", serif;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 12px;
+    margin-top: 70px;
+    border: none;
+    width: 197px;
+    /* height: 50px; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 /* Mobile Responsiveness */
 
@@ -303,7 +450,8 @@
     .nav-links,
     .contact-btn,
     .navbar h1,
-    .arrow-buttons {
+    .arrow-buttons,
+    .hidden-grid {
         display: none;
     }
 
@@ -352,7 +500,31 @@
     }
 
 
+    .story-grid {
+        grid-template-columns: 1fr;
+        /* 1 column on small screens */
+    }
 
+    .story-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for the first 4 cards */
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .date-2,
+    .date-3,
+    .date-4,
+    .date-5 {
+        left: 5px;
+        bottom: 160px;
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+
+    .view-all-btn {
+        width: 140px;
+        font-size: 0.9rem;
+    }
 }
 
 
