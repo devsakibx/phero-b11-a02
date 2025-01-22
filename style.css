@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+a * {
+    text-decoration: none;
+}
+
 /* *{border: 1px solid green;} */
 
 .shared-style-body {
@@ -295,10 +299,9 @@
     text-align: center;
     padding: 50px 0;
     margin-top: -80px;
-    /* background-color: #f0f0f0; Light background for gradient */
-    /* background: linear-gradient( #f0f0f0, #fea10171); */
-    /* background-image: linear-gradient( #f0f0f0, #fea10171); */
-    background-image: url(./assets/bg.png);
+    background: linear-gradient(#7b303000, #f2b3452d), url(./assets/bg.png);
+    background-position: center center;
+
 
 }
 
@@ -435,6 +438,79 @@
     cursor: pointer;
 }
 
+/* footer styles */
+
+footer {
+    background-color: #01ACFD;
+    color: #fff;
+    padding: 30px 0;
+    /* height: 280px; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.logo-container {
+    text-align: start;
+    width: 35%;
+
+}
+
+.logo-container img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.about-container,
+.social-media-container {
+    text-align: start;
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-container ul,
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.about-container ul li,
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.about-container ul li {
+    text-decoration: none !important;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 2px;
+    font-size: 2px;
+}
+
+.opp {
+    display: flex;
+    gap: 15px;
+}
+
+.opp h3 {
+    font-size: 25px;
+}
 
 /* Mobile Responsiveness */
 
@@ -502,12 +578,10 @@
 
     .story-grid {
         grid-template-columns: 1fr;
-        /* 1 column on small screens */
     }
 
     .story-container {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns for the first 4 cards */
         grid-template-rows: repeat(2, 1fr);
     }
 
@@ -524,6 +598,24 @@
     .view-all-btn {
         width: 140px;
         font-size: 0.9rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: start; 
+        text-align: start; 
+      }
+
+    .footer{
+    height: 1000px;
+    }
+
+    .opp{
+        width: 400px;
+    }
+
+    .logo-container p{
+    width: 100px
     }
 }
 
